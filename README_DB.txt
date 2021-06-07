@@ -1,0 +1,6 @@
+README FOR DB SETUP
+
+CREATE DATABASE ksdemodb;
+USE ksdemodb;
+
+create table mydata (id INT NOT NULL AUTO_INCREMENT,host VARCHAR(200),count VARCHAR(200),msg VARCHAR(200), datetime VARCHAR(200), PRIMARY KEY (id));
