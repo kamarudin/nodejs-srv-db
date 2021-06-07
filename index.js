@@ -8,10 +8,10 @@ const date = require('date-and-time')
 my_Count = 0
 
 db = mysql.createConnection({
-  host: '127.0.0.1',
-  port: '33060',
-  user: 'root',
-  password: '123123',
+  host: 'mysql-ksdemo',
+  port: '3306',
+  user: 'ksdemo',
+  password: 'ksdemo',
   database: 'ksdemodb'
 })
 
