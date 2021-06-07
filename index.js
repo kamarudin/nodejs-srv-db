@@ -15,7 +15,7 @@ db = mysql.createConnection({
   database: 'ksdemodb'
 })
 
-app.get('/', function (req, res) {
+app.get('/new', function (req, res) {
 
   now  =  new Date();
   ts=date.format(now,'YYYY/MM/DD HH:mm:ss.SSS').toString();
@@ -37,7 +37,7 @@ app.get('/', function (req, res) {
     if (err) throw err;
   })
 }),
-app.get('/list', function (rq, res) {
+app.get('/', function (rq, res) {
   let sql = `SELECT * FROM mydata`;
   db.query(sql, function(err, data, fields) {
     if (err) throw err;
