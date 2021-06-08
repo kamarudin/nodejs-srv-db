@@ -21,7 +21,7 @@ app.get('/new', function (req, res) {
   ts=date.format(now,'YYYY/MM/DD HH:mm:ss.SSS').toString();
   my_Host=os.hostname();
   my_Count = my_Count + 1;
-  my_Msg = "Demo-1";
+  my_Msg = "Demo-2";
 
   res.setHeader('Content-Type', 'application/json');
   res.json({Timestamp: ts, Hostname: my_Host, Count: my_Count, Msg: my_Msg });
